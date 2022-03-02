@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    block-size: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+h2{
+    color: #181818;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 100%;
+}
+h3{
+    color: #181818;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 100%; 
+}
+.big-numbers{
+    color: #0275B1;
+    font-size: 52px;
+}
+p{
+    font-size: 14px;
+    line-height: 21px;
+}
+.mini-text{
+    font-size:10px;
+    line-height: 15px;
+    color: #181818;
+}
