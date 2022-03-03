@@ -39,37 +39,47 @@ img{
 header{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    margin: 0 auto;
+    max-height: 80px;
+    max-width: 100%;
+    align-items: center;
+}
+.especific{
+    padding-left: 30px;
 }
 .icons {
     display: flex;
-    height: 50px;
     align-items: center;
     border-right: 1px solid #F4F4F4;
     border-left: 1px solid #F4F4F4;
 }
 .icons-content i {
     display:inline;
-    font-size: 25px;
     color: black;
    
 }
+.especific-2{
+    padding-right: 30px;
+}
 .hamburguer{
     text-align: center;
-    margin:21px 30px 0 30px ;
-    align-items: center;
-    font-size: 12px;
+    padding-top: 10px;
     font-weight: bold;
-    margin-right: 100px
+    margin-right: 100px;
+    padding-right:30px;
+    padding-left:30px;
+    border-right:1px solid #F4F4F4; 
+    border-left: 1px solid #F4F4F4; 
 }
-.hamburguer i{
-    font-size: 25px;;
+header i{
+    font-size: 23px;
 }
+
 .icons-content {
     text-align: center;
     margin:21px 30px 0 30px ;
     align-items: center;
-    font-size: 12px;
     font-weight: bold;
 }
 .contact{
@@ -78,5 +88,64 @@ header{
 }
 .logo{
     margin-left: 100px;
+    margin-right: 60px;
 }
-header
+header button{
+    background-color: transparent;
+    border: transparent;
+    padding: 0 0 0 30px;
+    color: #0275B1;
+}
+header input{
+    color: #181818;
+    border: transparent;
+    font-family:'Roboto', sans-serif; ;
+    font-size:17px ;
+}
+.btn{
+    margin-right: 50px;
+    padding-left: 30px;
+}
+.btn i{
+    margin-right: 30px;
+}
+main{
+   
+    max-width: 100%;
+    background-color: #E5E5E5;
+}
+.contact{
+    padding-left: 30px;
+    width: 350px;  
+    height: 80px;
+    border-left: 1px solid #F4F4F4;    
+    align-items: center;
+} 
+.contact img{
+    margin-top: 10px;
+    width: 42px;
+    height: 42px;
+}
+
+.contact p{
+    text-align: center;
+    line-height: 0;
+    font-size: 12px;
+}
+
+.text-contact{
+    margin-top: 7px;
+    display: block;
+    margin-left: 5px;
+    text-align: center;
+}
+.text-contact a{
+   text-decoration: none;
+   color: green;
+   font-size: 13px;
+}
+#nick{
+    font-weight: bold;
+    font-size: 15px;
+}
+
