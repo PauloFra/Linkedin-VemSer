@@ -26,14 +26,15 @@ p{
     font-size: 14px;
     line-height: 21px;
 }
+header p{
+    font-size: 11px;
+}
 .mini-text{
     font-size:10px;
     line-height: 15px;
     color: #181818;
 }
-img{
-    max-width: 100%;
-}
+
 /* Header */
 
 header{
@@ -42,8 +43,16 @@ header{
     justify-content: center;
     margin: 0 auto;
     max-height: 80px;
-    max-width: 100%;
+    max-width: 1440px;
     align-items: center;
+}
+.logo img{
+    width: 46px;
+    height: 46px;
+}
+img{
+    width: 100%;
+    
 }
 .especific{
     padding-left: 30px;
@@ -73,7 +82,7 @@ header{
     border-left: 1px solid #F4F4F4; 
 }
 header i{
-    font-size: 23px;
+    font-size: 20px;
 }
 
 .icons-content {
@@ -85,6 +94,12 @@ header i{
 .contact{
     width: 160px;
     display: flex;
+    padding-left: 30px;
+    width: 350px;  
+    height: 80px;
+    border-left: 1px solid #F4F4F4;    
+    align-items: center;
+    padding-right: 11px;
 }
 .logo{
     margin-left: 100px;
@@ -101,51 +116,65 @@ header input{
     border: transparent;
     font-family:'Roboto', sans-serif; ;
     font-size:17px ;
+    width: 150px;
+
 }
 .btn{
-    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    padding-right: 150px;
     padding-left: 30px;
 }
 .btn i{
+    color:#0275B1 ;
     margin-right: 30px;
 }
 main{
-   
     max-width: 100%;
     background-color: #E5E5E5;
 }
-.contact{
-    padding-left: 30px;
-    width: 350px;  
-    height: 80px;
-    border-left: 1px solid #F4F4F4;    
-    align-items: center;
-} 
+
 .contact img{
-    margin-top: 10px;
     width: 42px;
     height: 42px;
+    padding:0 8px 5px 0;
+    
 }
 
 .contact p{
-    text-align: center;
     line-height: 0;
-    font-size: 12px;
+    font-size: 13px;
+    text-align: left;
+    color: #747474;    
 }
 
 .text-contact{
-    margin-top: 7px;
-    display: block;
-    margin-left: 5px;
+
+    width: 150px;
     text-align: center;
+    padding:0 40px 0 0;
 }
 .text-contact a{
    text-decoration: none;
    color: green;
    font-size: 13px;
+   font-weight: bold;
 }
 #nick{
+    text-align: left;
     font-weight: bold;
     font-size: 15px;
+    color: #181818;
+}
+.text-contact i{
+    color: green;
+    font-size:13px;
+    font-weight: bold;
+    margin-left: 3px;
+}
+.text-contact span{
+    color: #747474;
+    font-size: 13px;
+    margin-left:6px;
 }
 
