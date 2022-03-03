@@ -132,11 +132,6 @@ header input{
     color:#0275B1 ;
     margin-right: 30px;
 }
-main{
-    max-width: 100%;
-    background-color: #E5E5E5;
-}
-
 .contact img{
     width: 42px;
     height: 42px;
@@ -256,4 +251,21 @@ footer {
     border-radius: 4px;
     width: 270px;
     padding: 11px 0 10px 15px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 100%;
+    background-color: #E5E5E5;
+    background-color: #5978960F;
+    padding: 40px;
+}
+.first-content ,.second-content{
+    border: 1px solid black;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 400px;
+    margin: 0 50px 0 0;
 }
