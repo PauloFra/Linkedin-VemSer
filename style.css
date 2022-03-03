@@ -34,11 +34,9 @@ header p{
     line-height: 15px;
     color: #181818;
 }
-
 /* Header */
 
 header{
-    display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
@@ -104,6 +102,10 @@ header i{
 .logo{
     margin-left: 100px;
     margin-right: 60px;
+}
+.logo img{
+    width: 46px;
+    height: 46px;
 }
 header button{
     background-color: transparent;
@@ -185,8 +187,19 @@ footer {
     justify-content: space-evenly;
     background-color: #F7F9FB;
     padding-top: 30px;
-    width: 100vw;
     height: 215px;
+    /* background: linear-gradient(180deg, rgba(241, 244, 248, 0.8) 0%, 
+                                    rgba(241, 244, 248, 0) 100%); */
+}
+
+.footer-logo img {
+    justify-content: left;
+    width: 46px;
+    /* height: 46px; */
+}
+
+.linkedin-name img{
+    width: 61px;
 }
 
 .footer-nav-menu {
@@ -213,16 +226,24 @@ footer {
 }
 
 .button-blue {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
     margin-bottom: 10px;
-    color: #F0F0F0;
     background: #0275B1;
+    color: #fff;
     border: 1px solid #0275B1;
     border-radius: 4px;
 }
 
 .button-white {
-    color: #0275B1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
     background: #F7F9FB;
+    color: #0275B1;
     border: 1px solid #0275B1;
     border-radius: 4px;
 }
