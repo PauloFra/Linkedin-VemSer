@@ -18,13 +18,19 @@ h3{
     font-size: 14px;
     line-height: 100%; 
 }
+h4{
+    font-size: 12px;
+}
 .big-numbers{
     color: #0275B1;
     font-size: 52px;
+    font-weight: bold;
+    line-height: 50px;
+    margin: 20px 0 0 0;
 }
 p{
     font-size: 14px;
-    line-height: 21px;
+    /* line-height: 21px; */
 }
 header p{
     font-size: 11px;
@@ -191,7 +197,6 @@ footer {
 .footer-logo img {
     justify-content: left;
     width: 46px;
-    /* height: 46px; */
 }
 
 .linkedin-name img{
@@ -261,6 +266,57 @@ main{
     background-color: #5978960F;
     padding: 40px;
 }
+
+.first-column {
+    width: 850px;
+}
+
+.second-column {
+    width: 290px;
+}
+
+.first-content-aside, .second-content-aside, .third-content-aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5);
+    border-radius: 4px;
+    margin-bottom: 20px;
+    background: #fff;
+}
+
+.header-aside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 230px;
+    height: 55px;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #F4F4F4;
+}
+
+.header-aside a {
+    color: #0275B1;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header-aside a:hover {
+    text-decoration: underline;
+}
+
+.dashboard-aside {
+    width: 230px;
+    margin-bottom: 30px;
+}
+
+.dashboard-aside p:not(.big-numbers) {
+    margin: 0;
+    padding: 0;
+}
+
 .first-content ,.second-content{
     border: 1px solid black;
     justify-content: center;
