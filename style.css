@@ -32,17 +32,17 @@ p{
     color: #181818;
 }
 img{
-    max-width: 100%;
+    width: 100%;
 }
 /* Header */
 
 header{
-    display: flex;
+    display: flex;tá aqui fechada hahahaha
     align-items: center;
     justify-content: center;
     margin: 0 auto;
     max-height: 80px;
-    max-width: 100%;
+    max-width: 1440px;
     align-items: center;
 }
 .especific{
@@ -89,6 +89,10 @@ header i{
 .logo{
     margin-left: 100px;
     margin-right: 60px;
+}
+.logo img{
+    width: 46px;
+    height: 46px;
 }
 header button{
     background-color: transparent;
@@ -156,10 +160,19 @@ footer {
     justify-content: space-evenly;
     background-color: #F7F9FB;
     padding-top: 30px;
-    width: 100vw;
     height: 215px;
     /* background: linear-gradient(180deg, rgba(241, 244, 248, 0.8) 0%, 
                                     rgba(241, 244, 248, 0) 100%); */
+}
+
+.footer-logo img {
+    justify-content: left;
+    width: 46px;
+    /* height: 46px; */
+}
+
+.linkedin-name img{
+    width: 61px;
 }
 
 .footer-nav-menu {
@@ -186,6 +199,10 @@ footer {
 }
 
 .button-blue {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
     margin-bottom: 10px;
     background: #0275B1;
     color: #fff;
@@ -194,6 +211,10 @@ footer {
 }
 
 .button-white {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
     background: #F7F9FB;
     color: #0275B1;
     border: 1px solid #0275B1;
