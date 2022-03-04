@@ -312,6 +312,7 @@ main{
 .first-column {
     margin-right: 30px;
     width: 850px;
+    margin-right: 40px;
 }
 
 .second-column {
@@ -487,7 +488,6 @@ main{
     width: 550px;
     text-align: left;
     margin-left: 190px;
-    
 }
 .btn-blue{
     background-color: #0275B1;
