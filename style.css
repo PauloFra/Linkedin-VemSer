@@ -563,7 +563,8 @@ main{
 }
 .second-content-text{
     text-align: left;
-    padding: 40px 0 0 40px; 
+    padding: 20px 0 0 40px; 
+    width: 800px;
 }
 .second-content-text a{
     text-decoration: none;
