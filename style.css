@@ -310,7 +310,6 @@ main{
 }    
 
 .first-column {
-    margin-right: 30px;
     width: 850px;
     margin-right: 40px;
 }
@@ -684,11 +683,12 @@ a:hover{
 }
 
 
-.container-new-post {
+.container-feed {
     width: 100%;
     background: #FFFFFF;
     box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5);
     border-radius: 4px;
+    margin-bottom: 20px;
 }
 
 .new-post {
@@ -702,6 +702,11 @@ a:hover{
 .title-post {
     border-bottom: 1px solid #f4f4f4;
 }
+
+.title-post h4 {
+    font-size: 14px;
+}
+
 
 .frame-post {
     display: flex;
@@ -729,4 +734,44 @@ a:hover{
 .btn-post img { 
     width: 24px;
     height: 24px;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    padding: 15px;
+    border-bottom: 1px solid #F4F4F4;;
+}
+
+.post-header img {
+    width: 24px;
+    height: 24px;
+}
+
+.post-footer {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    border-top: 1px solid #F4F4F4;;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-footer i { 
+    display: flex;
+    align-items: center;
+    color: #0275B1;  
+    padding: 0 15px; 
+}
+
+.post-footer i>span {
+    color: #000;
+    font-size: 11px;
+    margin-left: 8px;
 }
