@@ -1,26 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 body{
     margin: 0 auto;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
 h2{
     color: #181818;
     font-weight: bold;
     font-size: 18px;
     line-height: 100%;
 }
+
 h3{
     color: #181818;
     font-weight: bold;
     font-size: 14px;
     line-height: 100%; 
 }
+
 h4{
     font-size: 12px;
 }
+
 .big-numbers{
     color: #0275B1;
     font-size: 52px;
@@ -28,18 +35,22 @@ h4{
     line-height: 50px;
     margin: 20px 0 0 0;
 }
+
 p{
     font-size: 14px;
     /* line-height: 21px; */
 }
+
 header p{
     font-size: 11px;
 }
+
 .mini-text{
     font-size:10px;
     line-height: 15px;
     color: #181818;
 }
+
 /* Header */
 
 header{
@@ -51,32 +62,39 @@ header{
     max-width: 1440px;
     align-items: center;
 }
+
 .logo img{
     width: 46px;
     height: 46px;
 }
+
 img{
     width: 100%;
     
 }
-.especific{
+
+.specific{
     padding-left: 30px;
 }
+
 .icons {
     display: flex;
     align-items: center;
     border-right: 1px solid #F4F4F4;
     border-left: 1px solid #F4F4F4;
 }
+
 .icons-content i {
     display:inline;
     color: black;
    
 }
-.especific-2{
+
+.specific-2{
     padding-right: 30px;
 }
-.hamburguer{
+
+.hamburger{
     text-align: center;
     padding-top: 10px;
     font-weight: bold;
@@ -86,6 +104,7 @@ img{
     border-right:1px solid #F4F4F4; 
     border-left: 1px solid #F4F4F4; 
 }
+
 header i{
     font-size: 20px;
 }
@@ -96,6 +115,7 @@ header i{
     align-items: center;
     font-weight: bold;
 }
+
 .contact{
     width: 160px;
     display: flex;
@@ -106,20 +126,24 @@ header i{
     align-items: center;
     padding-right: 11px;
 }
+
 .logo{
     margin-left: 100px;
     margin-right: 60px;
 }
+
 .logo img{
     width: 46px;
     height: 46px;
 }
+
 header button{
     background-color: transparent;
     border: transparent;
     padding: 0 0 0 30px;
     color: #0275B1;
 }
+
 header input{
     color: #181818;
     border: transparent;
@@ -128,16 +152,19 @@ header input{
     width: 150px;
 
 }
+
 .btn{
     display: flex;
     align-items: center;
     padding-right: 150px;
     padding-left: 30px;
 }
+
 .btn i{
     color:#0275B1 ;
     margin-right: 30px;
 }
+
 .contact img{
     width: 42px;
     height: 42px;
@@ -158,24 +185,28 @@ header input{
     text-align: center;
     padding:0 40px 0 0;
 }
+
 .text-contact a{
    text-decoration: none;
    color: green;
    font-size: 13px;
    font-weight: bold;
 }
+
 #nick{
     text-align: left;
     font-weight: bold;
     font-size: 15px;
     color: #181818;
 }
+
 .text-contact i{
     color: green;
     font-size:13px;
     font-weight: bold;
     margin-left: 3px;
 }
+
 .text-contact span{
     color: #747474;
     font-size: 13px;
@@ -188,10 +219,8 @@ footer {
     display: flex;
     justify-content: space-evenly;
     background-color: #F7F9FB;
-    padding-top: 30px;
+    padding: 30px 0;
     height: 215px;
-    /* background: linear-gradient(180deg, rgba(241, 244, 248, 0.8) 0%, 
-                                    rgba(241, 244, 248, 0) 100%); */
 }
 
 .footer-logo img {
@@ -207,11 +236,13 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 35px;
+    height: 65%;
 }
 
 .footer-nav-menu p {
     font-size: 12px;
     line-height: 11px;
+    margin: 0;
 }
 
 .footer-buttons {
@@ -257,6 +288,7 @@ footer {
     width: 270px;
     padding: 11px 0 10px 15px;
 }
+
 main{
     display: flex;
     justify-content: center;
@@ -272,13 +304,14 @@ main{
 }
 
 .second-column {
+    box-sizing: border-box;
     width: 290px;
 }
 
 .first-content-aside, .second-content-aside, .third-content-aside {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5);
     border-radius: 4px;
@@ -307,14 +340,49 @@ main{
     text-decoration: underline;
 }
 
-.dashboard-aside {
-    width: 230px;
+.aside-card {
+    width: 100%;
+    padding: 0 30px;
     margin-bottom: 30px;
 }
 
 .dashboard-aside p:not(.big-numbers) {
     margin: 0;
     padding: 0;
+}
+
+.visitors-aside {
+    display: flex;
+    flex-direction: column; 
+    margin-top: 20px;
+}
+
+.profile-row {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.profile-row:last-child {
+    margin-bottom: 0 ;
+}
+
+.profile-row img {
+    width: 52px;
+    height: 52px;
+}
+
+.profile-text {
+    align-self: center;
+    margin-left: 15px;
+}
+
+.profile-text p {
+    font-weight: bold;
+    margin: 0;
+}
+
+.profile-text small {
+    font-size: 10px;
 }
 
 .first-content ,.second-content{
