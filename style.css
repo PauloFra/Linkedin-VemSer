@@ -291,7 +291,6 @@ footer {
 
 main{
     display: flex;
-    justify-content: space-evenly;
     margin: 0 auto;
     max-width: 100%;
     background-color: #E5E5E5;
@@ -304,6 +303,7 @@ main{
 
 .first-column {
     width: 850px;
+    margin-right: 40px;
 }
 
 .second-column {
@@ -477,7 +477,7 @@ main{
 .text-btns{
     width: 550px;
     text-align: left;
-    margin-left: 230px;
+    margin-left: 180px;
     
 }
 .btn-blue{
