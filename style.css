@@ -311,7 +311,7 @@ main{
     width: 290px;
 }
 
-.second-column p {
+.second-column p:not(.big-numbers) {
     font-weight: bold;
     margin: 0;
 }
@@ -415,7 +415,7 @@ main{
     overflow-x: hidden;
 }
 
-.first-content ,.second-content{
+.first-content, .second-content{
     text-align: center;
     margin: 0 auto;
     width: 850px;
@@ -506,10 +506,8 @@ main{
 
 .second-content{
     background-color: white;
- 
     width: 850px;
     height: 220px;
-   
 }
 .btn-sec {
     position: relative;
@@ -538,5 +536,4 @@ main{
     text-decoration: none;
     color: #0275B1;
     font-weight: bold;
-}
-  
+}  
