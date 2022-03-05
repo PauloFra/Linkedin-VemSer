@@ -1,38 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 * {
-    box-sizing: border-box;
-}
-
-body{
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
-h2{
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+h2 {
     color: #181818;
     font-weight: bold;
     font-size: 18px;
     line-height: 100%;
 }
 
-h3{
+h3 {
     color: #181818;
     font-weight: bold;
     font-size: 14px;
     line-height: 100%; 
 }
 
-h4{
+h4 {
     font-size: 20px;
     font-weight: bold;
 }
-.second-column h4{
+
+.second-column h4 {
     font-size: 14px;
 }
 
-.big-numbers{
+p {
+    font-size: 18px;
+    color: #181818;
+}
+
+header p {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.big-numbers {
     color: #0275B1;
     font-size: 52px;
     font-weight: bold;
@@ -40,181 +53,139 @@ h4{
     margin: 20px 0 0 0;
 }
 
-p{
-    font-size: 18px;
-    color: #181818;
-}
-
-header p{
-    font-size: 11px;
-}
-
-.mini-text{
+.mini-text {
     font-size:10px;
     line-height: 15px;
     color: #181818;
 }
 
+img {
+    width: 100%;
+}
+
 /* Header */
 
-header{
+header {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
-    max-height: 80px;
-    max-width: 1440px;
-    align-items: center;
+    height: 80px;
 }
 
-.logo img{
+header i {
+    font-size: 20px;
+}
+
+.logo {
+    width: 130px;
+    text-align: center;
+}
+
+.logo img {
     width: 46px;
     height: 46px;
 }
 
-img{
-    width: 100%;
-}
-
-.specific{
-    padding-left: 30px;
-}
-
-.icons {
+.icons-menu {
     display: flex;
     align-items: center;
+    height: 100%;
     border-right: 1px solid #F4F4F4;
     border-left: 1px solid #F4F4F4;
 }
 
-.icons-content i {
-    display:inline;
-    color: black;
-   
-}
-
-.specific-2{
-    padding-right: 30px;
-}
-
-.hamburger{
-    text-align: center;
-    padding-top: 10px;
-    font-weight: bold;
-    margin-right: 100px;
-    padding-right:30px;
-    padding-left:30px;
-    border-right:1px solid #F4F4F4; 
-    border-left: 1px solid #F4F4F4; 
-}
-
-header i{
-    font-size: 20px;
-}
-
 .icons-content {
+    width: 90px;
     text-align: center;
-    margin:21px 30px 0 30px ;
-    align-items: center;
     font-weight: bold;
 }
 
-.contact{
-    width: 16px;
+.icons-content i {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.notification::after {
+    content: url(img/notification_mark.png);
+    position: absolute;
+    top: 12px;
+}
+
+.search {
     display: flex;
-    padding-left: 30px;
-    width: 350px;  
-    height: 80px;
-    border-left: 1px solid #F4F4F4;    
-    align-items: center;
-    padding-right: 11px;
-    
+    width: 360px;
 }
 
-.logo{
-    margin-left: 100px;
-    margin-right: 60px;
+.search i {
+    color:#0275B1;
+    margin: 0 25px 0 30px;
 }
 
-.logo img{
-    width: 46px;
-    height: 46px;
+.search input {    
+    border: none;
+    outline: none;    
+    font-size:17px;
 }
 
-header button{
-    background-color: transparent;
-    border: transparent;
-    padding: 0 0 0 30px;
-    color: #0275B1;
+.search input::placeholder {
+    color: rgba(24, 24, 24, 0.2);
 }
 
-header input{
-    color: #181818;
-    border: transparent;
-    font-family:'Roboto', sans-serif; ;
-    font-size:17px ;
-    width: 150px;
-
-}
-
-.btn{
+.contact {
     display: flex;
     align-items: center;
-    padding-right: 150px;
     padding-left: 30px;
+    width: 330px;  
+    height: 100%;
+    border-left: 1px solid #F4F4F4;   
 }
 
-.btn i{
-    color:#0275B1 ;
-    margin-right: 30px;
-}
-
-.contact img{
+.contact img {
     width: 42px;
     height: 42px;
-    padding:0 8px 5px 0;
-    
 }
 
-.contact p{
-    line-height: 0;
+.text-contact {
+    margin-left: 15px;
+}
+
+.text-contact p {
     font-size: 13px;
     text-align: left;
-    color: #747474;    
+    color: #747474;
 }
 
-.text-contact{
-    width: 150px;
-    text-align: center;
-    padding:0 40px 0 0;
-    box-sizing: content-box;
-}
-
-.text-contact a{
-   text-decoration: none;
-   color: green;
-   font-size: 13px;
-   font-weight: bold;
-}
-
-#nick{
-    text-align: left;
-    font-weight: bold;
-    font-size: 15px;
+#nick {
     color: #181818;
+    margin-bottom: 5px;
 }
 
-.text-contact i{
-    color: green;
+#growth {
+   color: #02B033;
+   margin-left: 4px;
+}
+
+.text-contact i {
+    color: #02B033;
     font-size:13px;
-    font-weight: bold;
     margin-left: 3px;
 }
 
-.text-contact span{
-    color: #747474;
+.text-contact span {
+    color: rgba(24, 24, 24, 0.2);
     font-size: 13px;
-    margin-left:6px;
+    margin-left: 10px;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 100%;
+    border-right:1px solid #F4F4F4; 
+    border-left: 1px solid #F4F4F4; 
 }
 
 /* Footer */ 
@@ -222,18 +193,22 @@ header input{
 footer {
     display: flex;
     justify-content: space-evenly;
-    background-color: #F7F9FB;
     padding: 30px 0;
     height: 215px;
+    background-color: #F7F9FB;
     border-top: 1px solid #E7E7E7
 }
 
-footer  h4 {
-    font-size: 12px;
+footer h4 {
+    font-size: 13px;
+    margin-bottom: 20px;
 }
 
-.footer-logo img {
-    justify-content: left;
+.linkedin-logo {
+    margin-bottom: 10px;
+}
+
+.linkedin-logo img {
     width: 46px;
 }
 
@@ -250,8 +225,6 @@ footer  h4 {
 
 .footer-nav-menu p {
     font-size: 12px;
-    line-height: 11px;
-    margin: 0;
 }
 
 .footer-buttons {
@@ -266,7 +239,7 @@ footer  h4 {
     height: 32px;
 }
 
-.button-blue {
+.footer-btn-blue {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -278,7 +251,7 @@ footer  h4 {
     border-radius: 4px;
 }
 
-.button-white {
+.footer-btn-white {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -295,8 +268,15 @@ footer  h4 {
     border: 1px solid #F0F0F0;
     border-radius: 4px;
     width: 270px;
-    padding: 11px 0 10px 15px;
+    padding: 10px 0px 10px 15px;
 }
+
+select:focus, select:hover {
+    border: 1px solid #0275B1;
+    outline: none;
+}
+
+/* main */
 
 main{
     display: flex;
@@ -855,6 +835,7 @@ a{
 
 .fade-out {
     background-image: linear-gradient(180deg,#000000 30%,rgba(0,0,0,0));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
