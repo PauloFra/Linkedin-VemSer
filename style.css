@@ -228,6 +228,10 @@ footer {
     border-top: 1px solid #E7E7E7
 }
 
+footer  h4 {
+    font-size: 12px;
+}
+
 .footer-logo img {
     justify-content: left;
     width: 46px;
@@ -397,10 +401,6 @@ main{
     margin-left: 15px;
     overflow: hidden;
     white-space: nowrap;
-}
-
-.profile-text small {
-    
 }
 
 .recommendations-aside {
@@ -696,6 +696,10 @@ a:hover{
     margin-bottom: 20px;
 }
 
+.container-feed small {
+    font-size: 12px;
+}
+
 .new-post {
     display: flex;
     flex-direction: column;
@@ -826,9 +830,67 @@ a{
     border-bottom: 1px solid #F4F4F4;;
 }
 
+.post-header a {
+    font-weight: lighter;
+}
+
 .post-header img {
     width: 24px;
     height: 24px;
+}
+
+.post-box {
+    margin: 15px 30px 20px 30px;
+}
+
+.post-profile p{
+    margin: 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.post-content p {
+    font-size: 15px;
+}
+
+.fade-out {
+    background-image: linear-gradient(180deg,#000000 30%,rgba(0,0,0,0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.post-content a {
+    text-transform: uppercase;
+}
+
+.cloud-file {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #E9F0F8;
+    border-radius: 4px;
+    padding: 20px 30px 20px 20px;
+    margin-bottom: 10px;
+}
+
+.info-file {
+    display: flex;
+    align-items: center;
+}
+
+.info-file img {
+    width: 42px;
+    height: 42px;
+}
+
+.info-file>div {
+    margin-left: 15px;
+}
+
+.info-file p {
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0;
 }
 
 .post-footer {
