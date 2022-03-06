@@ -316,6 +316,11 @@ main{
     margin-bottom: 25px;
 }
 
+.header-container span {
+    color: #747474;
+    font-weight: lighter;
+}
+
 .footer-container {
     margin-top: 25px;
 }
@@ -431,29 +436,40 @@ main{
     height: 38px;
 }
 
-/* */
-
-.interativ-buttons button:hover{
-    transition-duration: 0.6s;
-    color: white;
-    background-color: #0275B1;
-    height: 50px;
-    border-radius: 10px 10px 0 0;
-}
-.second-content{
+/* .second-content{
     background-color: white;
     width: 850px;
     height: 220px;
 }
-.interativ-buttons{
+.interactive-buttons{
+    display: flex;
+    align-items: flex-end;
+} */
+
+.container-tabs {
+    margin-top: 30px;
+}
+
+.tab-buttons {
     display: flex;
     align-items: flex-end;
 }
-.btn-sec {
-    top: 6px;
-    margin-top: 30px;   
+
+#btn1 {
+    border-radius: 4px 0px 0px 0px;
+    border-bottom: none;
 }
-.btn-sec button{
+
+#btn2 {
+    border-bottom: none;
+}
+
+#btn3 {
+    border-radius: 0px 4px 0px 0px;
+    border-bottom: none;
+}
+
+.tab-buttons button{
     width: 240px;
     height: 40px;
     font-weight: bold;
@@ -462,18 +478,32 @@ main{
     border: 1px solid #E7E7E7;
 }
 
-.second-content-text{
-    text-align: left;
-    padding: 20px 0 0 40px; 
-    width: 800px;
+.tab-buttons button:hover{
+    transition-duration: 0.6s;
+    color: white;
+    background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
+    height: 50px;
+    border-radius: 10px 10px 0 0 !important;
 }
-.second-content-text a{
-    text-decoration: none;
-    color: #0275B1;
-    font-weight: bold;
-} 
 
-/* */
+.tab-content {
+    background-color: #fff;
+}
+
+.tab-gradient {
+    background: linear-gradient(180deg, rgba(241, 244, 248, 0.8) 0%, rgba(241, 244, 248, 0) 100%);
+    height: 50px;
+    border-top: 1px solid rgb(230, 229, 229);
+}
+
+.tab-content .box-content{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.tab-text h3 {
+    margin-bottom: 15px;
+}
 
 .box-content {
     margin-top: 30px;
@@ -558,8 +588,8 @@ main{
 .job-info {
     display: grid;
     grid-template-columns: auto auto;
-      
     flex-direction: column;
+    width: fit-content;
 }
 
 .job-info span{
@@ -938,14 +968,13 @@ main{
 }
 
 .trending-aside {
-    padding: 30px;
+    padding: 20px 30px 30px 30px;
 }
 
 .hashs {
-    margin: 25px 45px 30px 0;
+    margin: 20px 30px 30px 30px;
     display: flex;
     flex-wrap: wrap;
-    width: 190px;
     justify-content: flex-start;
     gap: 6px;
 }
