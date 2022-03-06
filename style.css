@@ -556,13 +556,20 @@ main{
 }
 
 .job-info {
-    display: flex;
-    width: fit-content;
+    display: grid;
+    grid-template-columns: auto auto;
+      
+    flex-direction: column;
 }
 
 .job-info span{
     color:#181818;
     font-size: small;
+}
+
+.job-info #time {
+    color: #0275B1;
+    font-weight: bold;
 }
 
 .job-info> span:last-child {
@@ -602,6 +609,16 @@ main{
     font-size: 12px;
     text-transform: uppercase;
     border-bottom: 1px solid #F4F4F4;
+}
+
+.footer-aside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 230px;
+    height: 55px;
+    font-size: 12px;
+    text-transform: uppercase;
 }
 
 .aside-card {
@@ -747,6 +764,11 @@ main{
     background-color: rgba(0,0,0,0);
 }
 
+#sort-select {
+    background: url('/img/misc/arrow-down.png') no-repeat top right;
+}
+
+
 .post-header {
     display: flex;
     justify-content: space-between;
@@ -881,52 +903,45 @@ main{
 .bio-lateral p {
     font-weight: lighter;
     font-size: 13px;
+    padding: 20px 20px 30px 20px;
 }
 
-
-.feed-page-first p{
-    font-size: 14px;
-    padding: 20px 30px;
-    line-height: 15px;
-}
-.feed-page-first h4{
-    font-size: 19px;
-    margin:0;
-}
-.feed-page-first i{
-   color: #D8C281;
-}
-.feed-page-first img{
-    width:100px;
-    height:100px;
-    
-}
-.base-feed{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5);
-    border-radius: 4px;
-    margin-bottom: 20px;
-    background: #fff;
-}
-.base-feed button{
+.content-aside button {
     font-weight: bold;
     width:230px;
     height: 32px;
     margin: 20px;
 }
 
-/* */
-
-.border-ajust{
-    border: 1px solid #F4F4F4;
-    padding: 5px;
-    border-radius: 8px;
-    align-content: center;
-    background-color: white;
+.groups-aside {
+    margin: 0 30px;
 }
-.hashs{
+
+.groups-row {
+    display: flex;
+    align-items: center;
+    border: 1px solid #F4F4F4;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.groups-row:last-child {
+    margin-bottom: 0;
+}
+
+.groups-photo {
+    margin: 15px;
+}
+
+.groups-photo img {
+    width: 52px;
+}
+
+.trending-aside {
+    padding: 30px;
+}
+
+.hashs {
     margin: 25px 45px 30px 0;
     display: flex;
     flex-wrap: wrap;
@@ -934,20 +949,16 @@ main{
     justify-content: flex-start;
     gap: 6px;
 }
-.hashs a{
+
+.hashs a {
     color: #181818;
     border-radius: 9px;
     padding: 10px;
     background-color: #E9F0F8;    
 }
-.hashs a:hover{
+
+.hashs a:hover {
     text-decoration: none;    
     transition: 0.5s;
     background-color:#e9ecf049 ;
-}
-.margin-support{
-    margin-bottom: 30px
-}
-.ajuste-fino{
-    padding-bottom: 20px;
 }
