@@ -273,11 +273,13 @@ footer h4 {
 }
 
 .footer-btn-blue:hover {
-    background: #0489d1;
+    background: #0795e2;
+    transition: 0.5s;
 }
 
 .footer-btn-white:hover {
-    background: #f0f0f0;
+    background: #e7e7e7;
+    transition: 0.5s;
 }
 
 .language-selector {
@@ -353,6 +355,11 @@ main{
     background-color: white;
     padding: 11px;
     font-weight: bold;
+}
+
+.bg-buttons button:hover {
+    transition: 0.5s;
+    background-color: #E7E7E7;
 }
 
 .info-profile {
@@ -567,7 +574,11 @@ main{
 }
 
 .experience-content p {
-    font-size: 15px;
+    font-size: 14px;
+}
+
+.experience-content p:last-child {
+    margin-top: 10px;
 }
 
 .experience-content>div>div {
@@ -583,13 +594,6 @@ main{
     width:54px;
     height:54px;
     margin-right: 15px;
-}
-
-.job-info {
-    display: grid;
-    grid-template-columns: auto auto;
-    flex-direction: column;
-    width: fit-content;
 }
 
 .job-info span{
